@@ -38,10 +38,10 @@ let isLogined=true;
 let isLoginedinBoolean=Boolean(isLogined);
 console.log('Value & Type',isLoginedinBoolean,typeof(isLoginedinBoolean));
 
-let isLogined1=1;
+let isLogined1="33abc";
 
 let isLoginedinBoolean1=Boolean(isLogined1);
-console.log('Value & Type',isLoginedinBoolean1,typeof(isLoginedinBoolean1));
+console.log('Value & Type of str',isLoginedinBoolean1,typeof(isLoginedinBoolean1));
 
 let isLogined2=null;
 
@@ -66,3 +66,25 @@ console.log('a',nameinString,typeof(nameinString));
 //1=>1
 //undefined=>undefine
 //null=>null
+
+
+//Operators
+//Typeescript and then logs
+console.log("1"+2); // First String Priority
+console.log(1+"2");
+console.log("1"+2+2);
+console.log(1+2+"2"); //First two number so addition
+
+console.log(1+null);//1
+console.log(1+undefined);//NaN
+
+//Prefix and Postfix
+
+//Postfix=> Values returns before increment
+let x=10;
+let y=x++;// y will get returned value before increment so y =>10
+console.log('x & y',x,y)
+//Prefix=>=> Values returns after increment
+let m=15
+let z=++m; // m will get returned value after increment so y =>16
+console.log('m & z',m,z)
