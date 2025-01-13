@@ -1,0 +1,44 @@
+<!--In this we are learning Events-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | JavaScript</title>
+</head>
+<body> 
+    <h2 id="heading">Welcome to Click FUnction</h2>
+    
+        <ul id="images">
+            <li>Hi</li>
+            <li>Hello</li>
+            <li>Good Morning</li>
+            <li>Had Tea</li>
+        </ul>
+        <button id="add">Add me</button>
+        
+  
+   
+    
+</body>
+<script>
+
+    <!--To Remove the ELement On Click of Li Elemets-->
+document.getElementById('images').addEventListener('click',function(e){
+    const parent=e.target;
+    parent.remove()
+   
+})
+
+<!-- To Add the ELement On Click of Button Click-->
+document.getElementById('add').addEventListener('click',function(e){
+   const addEl=document.createElement('li');
+   addEl.innerText="Had Lunch";
+   const ulselc=document.querySelector('ul');
+   ulselc.appendChild(addEl);
+    //document.body.appendChild(addEl)    
+
+})
+
+</script>
+</html>
