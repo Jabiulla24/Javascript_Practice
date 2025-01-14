@@ -1,0 +1,33 @@
+<!--In this we learn about Set Timeout & Set Interval-->
+<!--Settimeout is used to excecute any thing after some seconds or delay-->
+<!--SetInterval is used to excecute any thing continusly after given time-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout & TimeInterval</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    //This will print Welcome to Tutorial After 2 seconds
+    const set1=setTimeout(function (){
+        console.log('Welcome to Tutorial')
+    },2000)
+
+    //THis will print welcome date every 2 seconds
+    const int1=setInterval(function(){
+        console.log('Welcome'+Date.now());
+    },2000)
+
+    //We can stop the set timeout using clearTimeOut 
+    //we can stop the set Interval using clear interval
+
+    clearTimeout(set1);
+    clearInterval(int1);
+    </script>
+</html>
